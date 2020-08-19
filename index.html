@@ -1,110 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Easybank landing page</title>
 
-  <title>Easybank landing page</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo-div">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.svg" />
+          </a>
+        </div>
+        <div class="menu">
+          <span class="menu-link" href="#">Home</span>
+          <span class="menu-link" href="#">About</span>
+          <span class="menu-link" href="#">Contact</span>
+          <span class="menu-link" href="#">Blogs</span>
+          <span class="menu-link" href="#">Careers</span>
+        </div>
+        <div>
+          <button class="button nav-btn">Request Invite</button>
+        </div>
+        <div class="hamburger" onclick="showMenu()">
+          <img src="./images/icon-hamburger.svg" />
+        </div>
+      </div>
+      <div class="mobile-menu" id="x">
+        <span class="menu-link" href="#">Home</span>
+        <span class="menu-link" href="#">About</span>
+        <span class="menu-link" href="#">Contact</span>
+        <span class="menu-link" href="#">Blogs</span>
+        <span class="menu-link" href="#">Careers</span>
+      </div>
+    </div>
 
-<body>
+    <div class="head-div">
+      <!-- <img class="head-img" src="./images/image-mockups.png" /> -->
+      <div class="container">
+        <div class="head-info-div">
+          <div class="head-heading">Next generation digital banking</div>
+          <div class="head-heading-info">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </div>
+          <div><button class="button head-btn">Request Invite</button></div>
+        </div>
+      </div>
+    </div>
 
-  Home
-  About
-  Contact
-  Blog
-  Careers
+    <!-- Home About Contact Blog Careers Request Invite Next generation digital
+    banking Take your financial life online. Your Easybank account will be a
+    one-stop-shop for spending, saving, budgeting, investing, and much more.
+    Request Invite Why choose Easybank? We leverage Open Banking to turn your
+    bank account into your financial hub. Control your finances like never
+    before. Online Banking Our modern web and mobile applications allow you to
+    keep track of your finances wherever you are in the world. Simple Budgeting
+    See exactly where your money goes each month. Receive notifications when
+    you’re close to hitting your limits. Fast Onboarding We don’t do branches.
+    Open your account in minutes online and start taking control of your
+    finances right away. Open API Manage your savings, investments, pension, and
+    much more from one account. Tracking your money has never been easier.
+    Latest Articles By Claire Robinson Receive money in any currency with no
+    fees The world is getting smaller and we’re becoming more mobile. So why
+    should you be forced to only receive money in a single … By Wilson Hutton
+    Treat yourself without worrying about money Our simple budgeting feature
+    allows you to separate out your spending and set realistic limits each
+    month. That means you … By Wilson Hutton Take your Easybank card wherever
+    you go We want you to enjoy your travels. This is why we don’t charge any
+    fees on purchases while you’re abroad. We’ll even show you … By Claire
+    Robinson Our invite-only Beta accounts are now live! After a lot of hard
+    work by the whole team, we’re excited to launch our closed beta. It’s easy
+    to request an invite through the site ... About Us Contact Blog Careers
+    Support Privacy Policy Request Invite © Easybank. All Rights Reserved -->
 
-  Request Invite
-
-
-
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
-
-
-
-  Why choose Easybank?
-
-  We leverage Open Banking to turn your bank account into your financial hub. Control
-  your finances like never before.
-
-  Online Banking
-  Our modern web and mobile applications allow you to keep track of your finances
-  wherever you are in the world.
-
-  Simple Budgeting
-  See exactly where your money goes each month. Receive notifications when you’re
-  close to hitting your limits.
-
-  Fast Onboarding
-  We don’t do branches. Open your account in minutes online and start taking control
-  of your finances right away.
-
-  Open API
-  Manage your savings, investments, pension, and much more from one account. Tracking
-  your money has never been easier.
-
-
-
-  Latest Articles
-
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be
-  forced to only receive money in a single …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta.
-  It’s easy to request an invite through the site ...
-
-
-
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved
-
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
+    <!-- <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div> -->
+    <script>
+      function showMenu() {
+        if (document.getElementById("x").style.display === "flex") {
+          document.getElementById("x").style.display = "none";
+        } else {
+          document.getElementById("x").style.display = "flex";
+        }
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
