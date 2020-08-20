@@ -53,7 +53,7 @@
 }
 
 .head-div {
-  background-color: hsl(220, 16%, 96%);
+  background-color: hsl(0, 0%, 98%);
   background-image: url("./images//image-mockups.png"),
     url("./images/bg-intro-desktop.svg");
   background-size: 50%, 70%;
@@ -94,6 +94,39 @@
   justify-content: space-between;
 }
 
+.usp {
+  background-color: hsl(220, 16%, 96%);
+}
+.usp-div {
+  padding-top: 6%;
+  padding-bottom: 3%;
+}
+.usp-head {
+  padding-bottom: 5%;
+}
+.usp-img {
+  width: 4em;
+}
+.usp-card {
+  background-color: hsl(220, 16%, 96%);
+  border: none;
+}
+.card-body {
+  padding-left: 0;
+}
+
+.usp-head-info {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: grey;
+  padding-top: 2%;
+}
+.usp-text {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: grey;
+}
+
 @media screen and (max-width: 770px) {
   .nav-btn {
     display: none;
@@ -105,11 +138,18 @@
   .hamburger {
     display: flex;
   }
+  .usp-head {
+    text-align: center;
+  }
+  .usp-card {
+    align-items: center;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 560px) {
   .head-div {
     background: none;
-    background-color: hsl(220, 16%, 96%);
+    background-color: hsl(0, 0%, 98%);
     background-image: url("./images//image-mockups.png"),
       url("./images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
