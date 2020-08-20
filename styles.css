@@ -97,36 +97,96 @@
 .usp {
   background-color: hsl(220, 16%, 96%);
 }
+.usp-cards-div {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+.cards {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+}
+.card-heading {
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
 .usp-div {
   padding-top: 6%;
-  padding-bottom: 3%;
+  padding-bottom: 6%;
 }
 .usp-head {
-  padding-bottom: 5%;
+  width: 55%;
+  padding-bottom: 2%;
 }
 .usp-img {
   width: 4em;
 }
-.usp-card {
-  background-color: hsl(220, 16%, 96%);
-  border: none;
-}
-.card-body {
-  padding-left: 0;
-}
-
 .usp-head-info {
   font-size: 0.9em;
   font-weight: bold;
   color: grey;
-  padding-top: 2%;
 }
-.usp-text {
+.card-text {
   font-size: 0.8em;
   font-weight: bold;
   color: grey;
 }
 
+.articles {
+  background-color: hsl(0, 0%, 98%);
+}
+.article-text {
+  font-size: 0.72em;
+  font-weight: bold;
+  color: grey;
+}
+.article-card {
+  border: none;
+}
+.text-muted {
+  font-size: 0.6em;
+}
+.article-heading {
+  padding-bottom: 3%;
+}
+
+.articles-div {
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.footer-div {
+  background-color: hsl(233, 26%, 24%);
+}
+.footer-logo {
+  background-color: #fff;
+  width: 8em;
+}
+.footer-components {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.footer-info-div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info {
+  color: #fff;
+  font-size: 0.6em;
+  padding: 0.5em;
+}
+.footer-copyright {
+  font-size: 0.6em;
+  color: grey;
+}
+.footer-media-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(233, 26%, 24%);
+}
 @media screen and (max-width: 770px) {
   .nav-btn {
     display: none;
@@ -138,12 +198,45 @@
   .hamburger {
     display: flex;
   }
+  .usp-div {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
   .usp-head {
+    width: 100%;
     text-align: center;
   }
-  .usp-card {
+  .cards {
+    /* flex-direction: column; */
+    /* width: 100%; */
     align-items: center;
     text-align: center;
+    margin-top: 10%;
+  }
+  .usp-cards-div {
+    flex-direction: column;
+  }
+
+  .article-card {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  .article-heading {
+    text-align: center;
+  }
+  .footer-info-div {
+    align-items: center;
+  }
+  .footer-media-div {
+    align-items: center;
+  }
+  .footer-logo,
+  .footer-media,
+  .footer-btn,
+  .footer-copyright {
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 @media screen and (max-width: 560px) {
