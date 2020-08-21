@@ -191,6 +191,12 @@
   /* padding-top: 5%; */
 }
 
+.footer {
+  background-color: hsl(233, 26%, 24%);
+}
+.footer-div {
+  display: flex;
+}
 @media screen and (max-width: 770px) {
   .nav-btn {
     display: none;
