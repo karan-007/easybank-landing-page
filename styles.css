@@ -1,6 +1,10 @@
 * {
   font-size: 18px;
 }
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 .navbar {
   z-index: 500;
   background-color: white;
