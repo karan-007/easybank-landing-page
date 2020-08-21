@@ -196,7 +196,46 @@
 }
 .footer-div {
   display: flex;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
+.footer-media {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: space-between;
+}
+.footer-logo {
+  background-color: #fff;
+  width: 60%;
+}
+.footer-media-icons {
+  padding-top: 15%;
+}
+.footer-Company-info {
+  display: flex;
+  width: 50%;
+}
+.footer-info-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+.footer-copyright-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-info {
+  font-size: 0.8em;
+  color: #fff;
+}
+.footer-copyright {
+  font-size: 0.8em;
+  color: grey;
+}
+
 @media screen and (max-width: 770px) {
   .nav-btn {
     display: none;
