@@ -11,21 +11,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1%;
-  padding-bottom: 2%;
+  justify-items: center;
 }
 
 .menu {
   width: 35%;
+  height: 100%;
   display: flex;
+  height: 3em;
   justify-content: space-evenly;
   align-items: center;
+}
+.menu-link:hover {
+  border-bottom: 0.5em solid hsl(192, 70%, 51%);
+  /* background-color: hsl(233, 26%, 24%); */
 }
 
 .menu-link {
   font-size: 0.8em;
   color: grey;
   font-weight: bold;
+  height: 60%;
+  margin-top: 5%;
 }
 .menu-link:hover {
   cursor: pointer;
@@ -190,7 +197,9 @@
   color: grey;
   /* padding-top: 5%; */
 }
-
+.article-card-heading:hover {
+  color: hsl(192, 70%, 51%);
+}
 .footer {
   background-color: hsl(233, 26%, 24%);
 }
@@ -213,7 +222,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 15%;
-  width: 40%;
+  width: 60%;
 }
 .footer-Company-info {
   display: flex;
@@ -238,8 +247,26 @@
   font-size: 0.8em;
   color: grey;
 }
+.media-icon:hover {
+  background-color: hsl(192, 70%, 51%);
+  color: hsl(192, 70%, 51%);
+  fill: hsl(192, 70%, 51%);
+  cursor: pointer;
+}
+.footer-info:hover {
+  color: hsl(192, 70%, 51%);
+  cursor: pointer;
+}
+.button:hover {
+  background-image: hsl(192, 70%, 51%);
+  cursor: pointer;
+}
 
 @media screen and (max-width: 770px) {
+  .navbar {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
   .nav-btn {
     display: none;
   }
