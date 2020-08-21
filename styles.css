@@ -8,13 +8,17 @@
 .navbar {
   z-index: 500;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 
 .menu {
-  width: 40%;
+  width: 35%;
   display: flex;
   justify-content: space-evenly;
-  margin-right: 20px;
   align-items: center;
 }
 
@@ -61,8 +65,8 @@
   background-image: url("./images//image-mockups.png"),
     url("./images/bg-intro-desktop.svg");
   background-size: 50%, 70%;
-  background-repeat: no-repeat;
-  width: 100%;
+  background-repeat: no-repeat, no-repeat;
+  width: 100%, 100%;
   background-position: 117% 50%, 150% 40%;
   /* height: 600px; */
 }
