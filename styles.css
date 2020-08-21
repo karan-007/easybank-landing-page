@@ -210,7 +210,10 @@
   width: 60%;
 }
 .footer-media-icons {
+  display: flex;
+  justify-content: space-between;
   padding-top: 15%;
+  width: 40%;
 }
 .footer-Company-info {
   display: flex;
@@ -280,6 +283,50 @@
   .article-body {
     text-align: left;
   }
+
+  .footer-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-media {
+    width: 100%;
+    align-items: center;
+  }
+  .footer-media-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer-info-group {
+    width: 45%;
+    align-items: center;
+  }
+  .footer-copyright-btn {
+    align-items: center;
+    width: 100%;
+  }
+  .footer-media-icons {
+    padding-top: 5%;
+  }
+  .footer-logo {
+    width: 40%;
+  }
+  .footer-Company-info {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .footer-info {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .footer-copyright {
+    padding-top: 4%;
+  }
+  .footer-btn {
+    font-size: 0.85em;
+    font-weight: bold;
+    width: 220px;
+    height: 45px;
+  }
 }
 @media screen and (max-width: 560px) {
   .head-div {
@@ -308,5 +355,24 @@
   }
   .cards {
     width: 90%;
+  }
+  .footer-div {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .footer-Company-info {
+    flex-direction: column;
+  }
+  .footer-info-group {
+    width: 100%;
+  }
+  .footer-btn {
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 180px;
+    height: 40px;
+  }
+  .footer-media-icons {
+    width: 70%;
   }
 }
