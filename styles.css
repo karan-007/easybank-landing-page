@@ -2,7 +2,7 @@
   font-size: 18px;
 }
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 .navbar {
@@ -113,12 +113,16 @@
 }
 .cards {
   display: flex;
-  width: auto;
   flex-direction: column;
 }
-.card-heading {
-  padding-top: 5%;
-  padding-bottom: 2%;
+
+.usp-card {
+  width: 49%;
+}
+.usp-card-group {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .usp-div {
@@ -221,8 +225,18 @@
     text-align: center;
     margin-top: 10%;
   }
+  .usp-card {
+    width: 45%;
+  }
   .usp-cards-div {
     flex-direction: column;
+  }
+  .usp-div {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .usp-card-group {
+    width: 100%;
   }
 
   .article-card {
@@ -267,5 +281,12 @@
   }
   .head-heading-info {
     font-size: 0.8em;
+  }
+  .usp-card-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .usp-card {
+    width: 80%;
   }
 }
