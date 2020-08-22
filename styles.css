@@ -192,6 +192,7 @@
 }
 .article-card-heading:hover {
   color: hsl(192, 70%, 51%);
+  cursor: pointer;
 }
 .footer {
   background-color: hsl(233, 26%, 24%);
